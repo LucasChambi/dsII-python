@@ -17,5 +17,3 @@ print(nome, sobrenome, idade)
 print(type(nome))
 print(type(sobrenome))
 print(type(idade))
-
-'''Introdução ao Python'''
