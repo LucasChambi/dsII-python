@@ -1,8 +1,6 @@
-valor = 1500
-taxa = 0.05
-tempo = 10
+valor = float(input("Digite o valor da prestação: "))
+taxa = float(input("Digite o valor da taxa que será cobrado: "))
+tempo = float(input("Informe quantidade de meses atrasados: "))
 
-prestacao_calculada = valor + (valor * (taxa / 100) * tempo)
-print("O valor da prestação calculada é:", prestacao_calculada)
-
-#continuando o cálculo...
+prestacao = valor + (valor * (taxa/100) * tempo)
+print("A prestação calculada foi :", prestacao)
