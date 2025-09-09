@@ -59,5 +59,14 @@ lista = [1,2,3,4,5]
 for n1 in lista:
     print(n1) 
 
+# ele vai comecar do zero e vai até o 9
 for n1 in range(10):
     print(n1)
+
+# inicio, fim, salto (neste exemplo é impar)
+for n2 in range(1,11,2):
+    print(n2)
+
+# inicio, fim, salto (neste exemplo é par)
+for n2 in range(0,11,2):
+    print(n2)
