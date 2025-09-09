@@ -49,11 +49,15 @@ lista_incluida = [[1,2], [3,4], [5,6]]
 lista_incluida[0].append(9)
 print(lista_incluida)
 
-# Com Insert (qual posição quero inserir o valor)
-# lista = [1,2,3]
-# lista.insert(0, 4)
-# print(lista)
+#Com Insert (qual posição quero inserir o valor)
+lista = [1,2,3]
+lista.insert(1, 4)
+print(lista)
 
+# for in
 lista = [1,2,3,4,5]
 for n1 in lista:
     print(n1) 
+
+for n1 in range(10):
+    print(n1)
