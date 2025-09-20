@@ -11,7 +11,7 @@ lista_aninhada = [[1,2,3], [4,5,6], [7,8,9]]
 print(lista_aninhada[1][2], lista_aninhada[2][1])
 
 # Quando crio uma lista, posso armazenar varios tipos de dados, seja int, float, string, etc...
-#ja na variavel, posso armazenar apenas um dado.
+# já na variavel, posso armazenar apenas um dado.
 
 numeros = [1,2,3,4,5]
 x = numeros[3]
@@ -41,7 +41,7 @@ print(lista)
 
 # append quando adicionamos um numero inteiro, ele sempre será adicionado na ultima posição depois de uma lista
 lista_incluida = [1,2,3]
-lista_incluida.append(1) #ficará na ultima posição
+lista_incluida.append(1) # ficará na ultima posição
 print(lista_incluida)
 
 # Criando outro método
@@ -49,7 +49,7 @@ lista_incluida = [[1,2], [3,4], [5,6]]
 lista_incluida[0].append(9)
 print(lista_incluida)
 
-#Com Insert (qual posição quero inserir o valor)
+# Com Insert (qual posição quero inserir o valor)
 lista = [1,2,3]
 lista.insert(1, 4)
 print(lista)
