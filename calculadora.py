@@ -1,15 +1,46 @@
-# Lucas Bruno Calle Chambi - 3DS
+# Lucas Bruno Calle Chambi 3DS
 
 # calculadora simples em Python
-num1 = int(input("Digite um número: "))
-num2 = int(input("Digite outro número: "))
+def calculadora():
 
-soma = num1 + num2
-subtracao = num1 - num2
-multiplicacao = num1 * num2
-divisao = num1 / num2
+    # .strip() remove espaços em branco extras, prevenindo erros.
+    operacao = input("Digite uma operação (+, -, *, /): ").strip()
+    try:
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+    except ValueError:
+        print("Entrada inválida. Por favor, digite apenas números.")
+        return
 
-print(f"A soma é: {soma}")
-print(f"A subtração é: {subtracao}")
-print(f"A multiplicação é: {multiplicacao}")
-print(f"A divisão é: {divisao}")
+    # Funções para cada operação matemática
+    def adicao(a, b):
+        return a + b
+
+    def subtracao(a, b):
+        return a - b
+
+    def multiplicacao(a, b):
+        return a * b
+
+    def divisao(a, b):
+        if b == 0:
+            print("Erro: Divisão por zero não é permitida.")
+            return None # retorna um valor nulo para indicar o erro
+        return a / b
+
+    operacoes = {
+        '+': adicao,
+        '-': subtracao,
+        '*': multiplicacao,
+        '/': divisao
+    }
+
+    if operacao in operacoes:
+        # chama a função correspondente e armazena o resultado
+        resultado = operacoes[operacao](num1, num2)
+        if resultado is not None: # caso a operação obter um resultado que não seja nulo.
+            print(f"O resultado da operação é: {resultado}")
+    else:
+        print("Operação inválida. Por favor, digite uma das seguintes: +, -, *, /")
+        
+calculadora()
