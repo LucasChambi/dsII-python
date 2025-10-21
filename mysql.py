@@ -1,13 +1,12 @@
-import mysql.connector
+import mysql.connector.connect
 
 try:
     conexao = mysql.connector.connect(
-        host="localhost:3306",
-        database="usuario",
+        host="localhost",
+        database="etecbd",
         user="root",
         password=" ",  # Coloque a senha correta do root aqui
         port=3306,
-        auth_plugin='mysql_native_password'  # Use isso APENAS se não puder alterar a autenticação no MySQL
     )
     cursor = conexao.cursor()
 
